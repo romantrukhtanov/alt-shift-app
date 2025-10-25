@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (--tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.inputsItem {
+  width: 100%;
+
+  @media (--tablet) {
+    width: 50%;
+  }
+}
+
+.details {
+  min-height: 210px;
+  resize: none;
+
+  @media (--table) {
+    min-height: 236px;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.button {
+  min-height: 60px;
+}
+
+.loading {
+  pointer-events: none;
+}

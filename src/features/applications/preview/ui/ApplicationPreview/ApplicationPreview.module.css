@@ -1,0 +1,42 @@
+.root {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  width: 100%;
+  align-self: stretch;
+  min-height: 320px;
+
+  padding: 16px;
+
+  border-radius: var(--corner-radius-m);
+  background-color: var(--bg-secondary);
+
+  scroll-margin-top: 32px;
+
+  @media (--tablet) {
+    min-height: 360px;
+    padding: 24px;
+  }
+
+  @media (--desktop) {
+    min-height: 100%;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.copy {
+  transition: opacity 225ms ease-in-out;
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}

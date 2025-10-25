@@ -1,0 +1,12 @@
+/* I use 0.98px to avoid issues on high-dpi devices, zoom and screen splitting */
+@custom-media --mobile (max-width: 767.98px);
+@custom-media --tablet (min-width: 768px);
+@custom-media --desktop (min-width: 1024px);
+@custom-media --wide (min-width: 1440px);
+
+@custom-media --only-tablet (min-width: 768px) and (max-width: 1023.98px);
+
+@custom-media --portrait (orientation: portrait);
+@custom-media --landscape (orientation: landscape);
+
+@custom-media --hover (hover: hover) and (pointer: fine);

@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+
+  &.small {
+    gap: 4px;
+  }
+
+  &.large {
+    gap: 8px;
+  }
+
+  &.active {
+    background-color: darkblue;
+  }
+}
+
+.dot {
+  height: 8px;
+
+  background-color: var(--bg-dark);
+  opacity: 24%;
+
+  border-radius: 4px;
+  transition: opacity 225ms ease-in-out;
+
+  &.small {
+    width: 8px;
+  }
+
+  &.large {
+    width: 32px;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

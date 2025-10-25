@@ -1,0 +1,38 @@
+.root {
+  font-weight: var(--font-weight-semibold);
+
+  &.small,
+  &.medium {
+    padding: 10px 18px;
+  }
+
+  &.large {
+    padding: 16px 28px;
+  }
+}
+
+.circled {
+  border-radius: 50%;
+
+  &.small,
+  &.medium {
+    padding: 10px;
+  }
+
+  &.large {
+    padding: 16px;
+  }
+}
+
+.icon {
+  &.small,
+  &.medium {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.large {
+    width: 24px;
+    height: 24px;
+  }
+}

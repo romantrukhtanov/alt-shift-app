@@ -1,0 +1,8 @@
+.root {
+  font-weight: var(--font-weight-regular);
+  color: var(--text-tertiary);
+}
+
+.error {
+  color: var(--utility-warning);
+}

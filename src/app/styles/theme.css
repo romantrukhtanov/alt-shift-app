@@ -1,0 +1,70 @@
+:root {
+  /* Base colors */
+  --color-white: #ffffff;
+  --color-dark: #101828;
+  --color-gray-100: #f2f4f7;
+  --color-gray-200: #eaecf0;
+  --color-gray-300: #d0d5dd;
+  --color-gray-400: #98a2b3;
+  --color-gray-500: #667085;
+  --color-gray-600: #475467;
+  --color-gray-700: #344054;
+
+  /* Brand colors */
+  --color-brand-light: #edfcf2;
+  --color-brand: #0a9150;
+  --color-brand-dark: #087443;
+  --color-brand-darker: #095c37;
+
+  /* Success colors */
+  --color-success-light: #d1fadf;
+  --color-success-accent: #73e2a3;
+
+  /* Error colors */
+  --color-error-light: #fee4e2;
+  --color-error-100: #ffcdc9;
+  --color-error-200: #fda29b;
+  --color-error-300: #fa796f;
+  --color-error-400: #f14f42;
+  --color-error-500: #de3124;
+
+  /* Warning colors */
+  --color-warning: #f04438;
+}
+
+body[data-theme='light'] {
+  /* Utility and brand colors */
+  --utility-warning: var(--color-warning);
+  --utility-success-light: var(--color-success-light);
+  --utility-success-accent: var(--color-success-accent);
+
+  --utility-error-light: var(--color-error-light);
+  --utility-error-100: var(--color-error-100);
+  --utility-error-200: var(--color-error-200);
+  --utility-error-300: var(--color-error-300);
+  --utility-error-400: var(--color-error-400);
+  --utility-error-500: var(--color-error-500);
+  --utility-brand: var(--color-brand);
+  --utility-brand-dark: var(--color-brand-dark);
+  --utility-brand-darker: var(--color-brand-darker);
+
+  /* Backgrounds */
+  --bg-primary: var(--color-white);
+  --bg-secondary: var(--color-gray-100);
+  --bg-brand: var(--color-brand-light);
+  --bg-dark: var(--color-dark);
+  --bg-disabled: var(--color-gray-300);
+
+  /* Text colors */
+  --text-primary: var(--color-dark);
+  --text-secondary: var(--color-gray-500);
+  --text-tertiary: var(--color-gray-600);
+  --text-subtle: var(--color-gray-700);
+  --text-primary-on-brand: var(--color-white);
+  --text-error: var(--color-error-500);
+  --text-disabled: var(--color-gray-400);
+
+  /* Borders */
+  --border-primary: var(--color-gray-300);
+  --border-secondary: var(--color-gray-200);
+}

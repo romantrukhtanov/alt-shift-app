@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  align-items: center;
+
+  &.small {
+    gap: 16px;
+  }
+
+  &.large {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "alt-shift-app",
+  "version": "0.0.1",
+  "description": "Alt+Shift – A modern AI-powered text generator",
+  "author": "Roman Trukhtanov",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel:dev": "vercel dev --local-config vercel.dev.json",
+    "vercel:deploy": "vercel deploy --prod",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "ts": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format:check": "prettier --check",
+    "cm": "git cz -e",
+    "branch": "node ./scripts/create-branch.mjs",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "5.2.2",
+    "clsx": "2.1.1",
+    "husky": "9.1.7",
+    "openai": "6.7.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-hook-form": "7.65.0",
+    "react-responsive": "10.0.1",
+    "react-router": "7.9.4",
+    "react-toastify": "11.0.5",
+    "zod": "4.1.12",
+    "zustand": "5.0.8"
+  },
+  "devDependencies": {
+    "@csstools/postcss-global-data": "3.1.0",
+    "@types/node": "24.8.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vercel/node": "5.5.0",
+    "@vitejs/plugin-react": "5.0.4",
+    "eslint": "9.38.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-import-resolver-typescript": "4.4.4",
+    "eslint-plugin-compat": "6.0.2",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-no-array-any": "1.0.2",
+    "eslint-plugin-prettier": "5.5.4",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.0.0",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "eslint-plugin-unused-imports": "4.3.0",
+    "git-cz": "4.9.0",
+    "kleur": "4.1.5",
+    "lint-staged": "16.2.6",
+    "postcss": "8.5.6",
+    "postcss-import": "16.1.1",
+    "postcss-normalize": "13.0.1",
+    "postcss-preset-env": "10.4.0",
+    "prettier": "3.6.2",
+    "prompts": "2.4.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.1",
+    "unplugin-fonts": "1.4.0",
+    "vite": "7.1.11",
+    "vite-plugin-svgr": "4.5.0",
+    "vite-tsconfig-paths": "5.1.4"
+  },
+  "browserslist": [
+    ">0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.4"
+}

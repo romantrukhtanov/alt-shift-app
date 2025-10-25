@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+  max-width: calc(var(--container-max-width) + 2 * var(--container-padding-desktop));
+  margin: 0 auto;
+  padding: 0 var(--container-padding-mobile);
+
+  @media (--tablet) {
+    padding: 0 var(--container-padding-tablet);
+  }
+
+  @media (--desktop) {
+    padding: 0 var(--container-padding-desktop);
+  }
+}

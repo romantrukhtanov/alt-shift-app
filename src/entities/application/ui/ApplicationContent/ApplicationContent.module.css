@@ -1,0 +1,7 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--line-height-text-lg);
+  flex-grow: 1;
+  overflow: hidden auto;
+}

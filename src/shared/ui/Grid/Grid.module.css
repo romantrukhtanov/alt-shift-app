@@ -1,0 +1,15 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols-mobile), minmax(0, 1fr));
+  gap: var(--grid-gap-mobile);
+
+  @media (--tablet) {
+    grid-template-columns: repeat(var(--grid-cols-tablet), minmax(0, 1fr));
+    gap: var(--grid-gap-tablet);
+  }
+
+  @media (--desktop) {
+    grid-template-columns: repeat(var(--grid-cols-desktop), minmax(0, 1fr));
+    gap: var(--grid-gap-desktop);
+  }
+}

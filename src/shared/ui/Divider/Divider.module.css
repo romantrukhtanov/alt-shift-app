@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  clear: both;
+
+  width: 100%;
+  max-width: 100%;
+
+  border-bottom: 1px solid var(--border-secondary);
+}

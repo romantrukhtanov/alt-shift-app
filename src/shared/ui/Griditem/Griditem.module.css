@@ -1,0 +1,12 @@
+.root {
+  grid-column: span var(--grid-span-mobile);
+  min-width: 0;
+
+  @media (--tablet) {
+    grid-column: span var(--grid-span-tablet);
+  }
+
+  @media (--desktop) {
+    grid-column: span var(--grid-span-desktop);
+  }
+}

@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (--desktop) {
+    gap: 48px;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

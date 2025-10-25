@@ -1,0 +1,27 @@
+.root {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (--tablet) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (--desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

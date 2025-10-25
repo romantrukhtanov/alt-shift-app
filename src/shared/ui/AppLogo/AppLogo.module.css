@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 225ms ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--color-success-light);
+    border-radius: var(--corner-radius-s);
+  }
+
+  &:global(.active) {
+    pointer-events: none;
+
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+}
+
+.icon {
+  width: 120px;
+  height: 32px;
+
+  @media (--tablet) {
+    width: 179px;
+    height: 48px;
+  }
+}
