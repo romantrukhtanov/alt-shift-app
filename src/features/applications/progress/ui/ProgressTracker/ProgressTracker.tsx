@@ -26,7 +26,11 @@ export function ProgressTracker({ compact }: ProgressTrackerProps) {
           {count}/{goal} {!isMobile && <span className={styles.text}>applications generated</span>}
         </Text>
 
-        {isReached ? <CheckIcon /> : !isMobile && <ProgressSteps stepLength={goal} currentStep={count} />}
+        {isReached ? (
+          <CheckIcon className={styles.icon} />
+        ) : (
+          !isMobile && <ProgressSteps stepLength={goal} currentStep={count} />
+        )}
       </div>
     );
   }
