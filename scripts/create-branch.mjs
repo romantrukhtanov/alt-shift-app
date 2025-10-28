@@ -5,7 +5,7 @@ import childProcess from 'node:child_process';
 
 const exec = util.promisify(childProcess.exec);
 
-const projectTypes = ['RT'];
+const projectTypes = ['AS'];
 const maxDescriptionLength = 50;
 const minDescriptionLength = 3;
 const mainBranch = 'main';
